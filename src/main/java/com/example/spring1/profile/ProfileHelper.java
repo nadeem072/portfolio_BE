@@ -40,13 +40,21 @@ public class ProfileHelper {
 
         //Eduction
         List<Education> educationList = new ArrayList<>();
-        Education education = new Education();
-        education.setModeOfStudy("full Time");
-        education.setNameOfCourse("Bachelor of engineering");
-        education.setSpecification("electronics and communication");
-        education.setYearOfPassing(LocalDate.of(2021, 6,21));
-        education.setNameOfInstitution("kalpataru Institute Of Technology");
-        educationList.add(education);
+        Education education1 = new Education();
+        education1.setModeOfStudy("full Time");
+        education1.setNameOfCourse("Bachelor of engineering");
+        education1.setSpecification("electronics and communication");
+        education1.setYearOfPassing(LocalDate.of(2021, 6,21));
+        education1.setNameOfInstitution("kalpataru Institute Of Technology");
+        educationList.add(education1);
+
+        Education education2 = new Education();
+        education2.setModeOfStudy("full Time");
+        education2.setNameOfCourse("Pre university education");
+        education2.setSpecification("PCMB");
+        education2.setYearOfPassing(LocalDate.of(2017, 5,21));
+        education2.setNameOfInstitution("Govt boys PU college");
+        educationList.add(education2);
 
         profile.setEducation(educationList);
 
@@ -64,11 +72,19 @@ public class ProfileHelper {
 
         //Projects
         List<Projects> projectsList = new ArrayList<>();
+        Projects projects1 = new Projects();
+        projects1.setProjectDescription("Git hub Profile viewer");
+        projects1.setDeploymentLink("This is not deployed but iss available in github");
+        projects1.setNameOfTheProject("Github profile viewer");
+        projects1.setGithubLink("https://github.com/nadeem072/portfolio_BE");
+        projectsList.add(projects1);
+
         Projects projects = new Projects();
-        projects.setProjectDescription("sample description");
-        projects.setDeploymentLink("sample Deployment link");
-        projects.setNameOfTheProject("portfolio");
-        projects.setGithubLink("sample github link");
+        projects.setProjectDescription("portfolio Website for the personal skills display");
+        projects.setDeploymentLink("This is not yet deployed but is available in github");
+        projects.setNameOfTheProject("Github profile viewer");
+        projects.setGithubLink("https://github.com/nadeem072/portfolio_BE");
+
         projectsList.add(projects);
 
         profile.setProjects(projectsList);
